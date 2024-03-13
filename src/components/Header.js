@@ -37,16 +37,16 @@ export default function Header() {
                                         {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
                                             <ul className="navbar-nav">
                                                 <li className="nav-item">
-                                                    <a className="nav-link" aria-current="page" href="contact">Contact <p className='text-smal'>Tel : 00 00 00 00 00 <br /> Gmail : sarloisebtp@gmail.com</p></a>
+                                                    <a className="nav-link" aria-current="page" href="Contact">Contact <p className='text-smal'>Tel : 00 00 00 00 00 <br /> Gmail : sarloisebtp@gmail.com</p></a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="our_services">Nos Services</a>
+                                                    <a className="nav-link" href="Nos-services">Nos Services</a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="galleries">Galleries</a>
+                                                    <a className="nav-link" href="Galleries">Galleries</a>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="about" >A propos de nous</a>
+                                                    <a className="nav-link" href="A-propos-nous" >A propos de nous</a>
                                                 </li>
                                             </ul>
                                         {/* </div> */}
