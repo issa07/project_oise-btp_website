@@ -1,0 +1,22 @@
+/* @media only screen and (max-width: 990px) {
+    .col-bio-img {
+        height: 5vh;
+    }
+} */
+
+.div-global-bio {
+    background-color: #f0f0f0;
+}
+
+.text-bio {
+    padding: 10px;
+    text-align: justify;
+}
+
+.col-bio-img {
+    align-items: center;
+    display: flex;
+}
+.img-bio {
+    padding: 20px;
+}
