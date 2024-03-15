@@ -13,8 +13,8 @@ export default function App() {
         <div>
             <Header />
             <Section />
-            <Footer />
             <SendEmail />
+            <Footer />
         </div>
     )
 }

@@ -17,10 +17,6 @@
     justify-content: end;
 }
 
-li {
-    padding-right: 40px;
-}
-
 @media only screen and (max-width: 990px) {
     .nav-link {
         padding: 10px 10px 10px;
@@ -40,6 +36,11 @@ li {
     font-weight: lighter; 
     color: rgb(0, 0, 0);
 }
+
+.nav-item {
+    padding-right: 40px;
+}
+
 .nav-link {
     padding-top: 20px;
     font-size: 18px;
