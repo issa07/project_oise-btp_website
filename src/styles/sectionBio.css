@@ -7,16 +7,24 @@
 .div-global-bio {
     background-color: #f0f0f0;
 }
-
-.text-bio {
-    padding: 10px;
-    text-align: justify;
+#rowBio {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
 }
 
-.col-bio-img {
-    align-items: center;
+.text-bio {
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+.div-img {
+    /* align-items: center; */
     display: flex;
 }
 .img-bio {
+    height: 350px;
     padding: 20px;
+    margin-left: auto;
+    /* margin: 100px; */
 }
