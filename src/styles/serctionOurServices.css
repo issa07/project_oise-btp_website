@@ -1,0 +1,16 @@
+.div-global-services {
+    background-color: rgb(243, 235, 225);
+}
+
+.title-ourServices {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+.col > p {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}

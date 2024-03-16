@@ -1,8 +1,8 @@
 import React from 'react'
 
-import '../styles/slide.css'
+import '../styles/slider.css'
 
-export default function SectionSlider() {
+export default function Slider() {
 
     function CarouselItem({ imgSrc, label, content, active = false }) {
         return (
