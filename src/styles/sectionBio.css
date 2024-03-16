@@ -1,3 +1,9 @@
+@media screen and (max-width: 768px) {
+    .div-img {
+        width: auto;
+    }
+}
+
 .div-global-bio {
     background-color: #f0f0f0;
 }
@@ -9,11 +15,14 @@
 
 .text-bio {
     padding-top: 20px;
+    padding-bottom: 10px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
 }
+
 .div-img {
-    /* align-items: center; */
+    /* width: auto; */
+    align-items: center;
     display: flex;
 }
 .img-bio {

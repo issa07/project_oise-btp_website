@@ -1,3 +1,5 @@
+
+
 .div-global-services {
     background-color: rgb(243, 235, 225);
 }
@@ -8,9 +10,20 @@
     padding-bottom: 20px;
 } 
 
-.col > p {
+.div-service {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* margin: auto; */
+}
+.div-service .last {
+    margin: auto;
+}
+.div-service > h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
+}
+.div-service > p {
+    padding-bottom: 20px;
+    font-size: 18px;
 }
