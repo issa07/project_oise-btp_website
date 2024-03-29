@@ -1,0 +1,12 @@
+.bg-partenariats {
+    background-color: rgb(235, 235, 235);
+}
+
+.div-partenariats {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
