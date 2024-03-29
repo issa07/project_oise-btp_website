@@ -18,13 +18,6 @@ export default function Header() {
                         <div className="col-10 div-nav ">
                             <nav className="navbar navbar-expand-lg navbar-light">
                                 <div className="container-fluid">
-                                    {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span className="navbar-toggler-icon"></span>
-                                    </button> */}
-
-
-                                    {/* <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</button> */}
-
                                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                         <span className="navbar-toggler-icon"></span>
                                     </button>
@@ -35,22 +28,20 @@ export default function Header() {
                                             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                         </div>
                                         <div className="offcanvas-body">
-                                            {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
-                                                <ul className="navbar-nav">
-                                                    <li className="nav-item">
-                                                        <a className="nav-link" aria-current="page" href="Contact">Contact <p className='text-smal'>Tel : 00 00 00 00 00 <br /> Gmail : sarloisebtp@gmail.com</p></a>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <a className="nav-link" href="Nos-services">Nos Services</a>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <a className="nav-link" href="Galleries">Galleries</a>
-                                                    </li>
-                                                    <li className="nav-item">
-                                                        <a className="nav-link" href="A-propos-nous" >A propos de nous</a>
-                                                    </li>
-                                                </ul>
-                                            {/* </div> */}
+                                            <ul className="navbar-nav">
+                                                <li className="nav-item">
+                                                    <a className="nav-link" aria-current="page" href="Contact">Contact <p className='text-smal'>Tel : 00 00 00 00 00 <br /> Gmail : sarloisebtp@gmail.com</p></a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#services">Nos Services</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="Galleries">Galleries</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="A-propos-nous" >A propos de nous</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

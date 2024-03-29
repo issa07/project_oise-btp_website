@@ -4,7 +4,7 @@ import '../styles/serctionOurServices.css'
 
 export default function SectionOurServices() {
   return (
-    <div className='div-global-services'>
+    <div className='div-global-services' id='services'>
         <div className="container">
             <h1 className="title-ourServices"><strong>Nos services</strong></h1>
             <div className="row">
@@ -28,7 +28,7 @@ export default function SectionOurServices() {
                         esthétiques et conformes à vos besoins.
                     </p>
                 </div>
-                <div className="col-6 col-md-4 div-service last">
+                <div className="col-6 col-md-4 div-service last-div-service">
                     <img src={process.env.PUBLIC_URL + '/img/ravalement-projete_transparent.png'} alt="" className="img-fluid" />
                     <h4><b> Ravalement projeté  </b></h4>
                     <p>
