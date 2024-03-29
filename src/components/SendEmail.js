@@ -1,11 +1,31 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
-  const form = useRef();
+
+    // const [champValeur, setChampValeur] = useState('');
+
+    // const handleChange = (event) => {
+    //     setChampValeur(event.target.value);
+    // }
+
+    const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        // Validation des champs
+        const champ1Value = form.current['from_name'].value;
+        const champ2Value = form.current['email'].value;
+        const champ3Value = form.current['phone'].value;
+        const champ4Value = form.current['subject'].value;
+        const champ5Value = form.current['message'].value;
+
+        if(!champ1Value || !champ2Value || !champ3Value || !champ4Value || !champ5Value) {
+            alert('Veuillez remplir tous les champs avant d\'envoyer le message.');
+            return;
+        }
+    
 
         emailjs
         .sendForm(
