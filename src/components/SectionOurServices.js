@@ -9,7 +9,7 @@ export default function SectionOurServices() {
             <h1 className="title-ourServices"><strong>Nos services</strong></h1>
             <div className="row">
                 <div className="col-6 col-md-4 div-service">
-                    <img src={process.env.PUBLIC_URL + '/img/construction-img.jpg'} alt="" className="img-fluid" />
+                    <img src={process.env.PUBLIC_URL + '/img/construction-transparent.png'} alt="" className="img-fluid" />
                     <h4><b> Construction </b></h4>
                     <p>
                         Oise BTP excelle dans la construction sur mesure de maisons, 
@@ -20,7 +20,7 @@ export default function SectionOurServices() {
                     </p>
                 </div>
                 <div className="col-6 col-md-4 div-service">
-                    <img src={process.env.PUBLIC_URL + '/img/renovation-img.jpeg'} alt="" className="img-fluid" />
+                    <img src={process.env.PUBLIC_URL + '/img/renovation-transparent.png'} alt="" className="img-fluid" />
                     <h4><b> Rénovation  </b></h4>
                     <p> 
                         Confiez à Oise BTP la rénovation de votre maison, bureau ou espace commercial. 
@@ -29,7 +29,7 @@ export default function SectionOurServices() {
                     </p>
                 </div>
                 <div className="col-6 col-md-4 div-service last">
-                    <img src={process.env.PUBLIC_URL + '/img/ravalement-projete.jpg'} alt="" className="img-fluid" />
+                    <img src={process.env.PUBLIC_URL + '/img/ravalement-projete_transparent.png'} alt="" className="img-fluid" />
                     <h4><b> Ravalement projeté  </b></h4>
                     <p>
                         Oise BTP offre des services de ravalement projeté de haute qualité pour rafraîchir et renforcer la durabilité de vos façades. 
