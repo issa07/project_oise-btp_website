@@ -1,55 +1,90 @@
-import React, { useState, useEffect  } from 'react'
- import '../styles/navbar.css';
+import React, { useState  } from 'react'
+import { Drawer, Button, List, ListItem, ListItemText } from '@material-ui/core';
+
+
+import '../styles/navbar.css';
+
 
 export default function Header() {
 
-    // function handleClick(event) {
-    //     alert("Vous avec clique sur : " + event.target.innerText);
-    // }
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-    return (
-        <header>
-            <div className='navbars'>
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
+  const checkScreenSize = () => {
+    setIsSmallScreen(window.innerWidth < 768);
+  };
+
+  window.addEventListener('resize', checkScreenSize);
+    
+    return ( 
+        <>
+            <div className="navbar">
                 <div className="container">
-                    <div className="row">
+                    <div className="row ">
                         <div className="col-2">
                             <img className='logo' src={process.env.PUBLIC_URL + '/img/oisebtp-logo.png'} alt="logo" />
                         </div>
-                        <div className="col-10 div-nav ">
-                            <nav className="navbar navbar-expand-lg navbar-light">
-                                <div className="container-fluid">
-                                    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span className="navbar-toggler-icon"></span>
-                                    </button>
-
-                                    <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                        <div className="offcanvas-header">
-                                            <h5 className="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
-                                            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                        </div>
-                                        <div className="offcanvas-body">
-                                            <ul className="navbar-nav">
-                                                <li className="nav-item">
-                                                    <a className="nav-link" aria-current="page" href="Contact">Contact <p className='text-smal'>Tel : 00 00 00 00 00 <br /> Gmail : sarloisebtp@gmail.com</p></a>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <a className="nav-link" href="#services">Nos Services</a>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <a className="nav-link" href="Galleries">Galleries</a>
-                                                </li>
-                                                <li className="nav-item">
-                                                    <a className="nav-link" href="A-propos-nous" >A propos de nous</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </nav>
+                        <div className="col-10 div-nav">
+                            {isSmallScreen ? (
+                                <Button className="navbar-toggler drawer-btn"  onClick={handleToggle}>
+                                    <span className="navbar-toggler-icon"></span>
+                                </Button>
+                            ) : (
+                                    <List className='offcanvas-body drawer-list '>
+                                        <ListItem button style={{alignItems: 'baseline'}}>
+                                            <ListItemText>
+                                                <a className="nav-link" aria-current="page" href="#contact">Contact <p className='text-smal'>Tel : 00 00 00 00 00 <br /> Gmail : sarloisebtp@gmail.com</p></a>
+                                            </ListItemText>
+                                        </ListItem>
+                                        <ListItem button style={{alignItems: 'baseline'}}>
+                                            <ListItemText>
+                                                <a className="nav-link" href="#about" >A propos de nous</a>
+                                            </ListItemText>
+                                        </ListItem>
+                                        <ListItem button style={{alignItems: 'baseline'}}>
+                                            <ListItemText>
+                                                <a  className="nav-link" href="#services">Nos Services</a>
+                                            </ListItemText>
+                                        </ListItem>
+                                        <ListItem button style={{alignItems: 'baseline'}}>
+                                            <ListItemText>
+                                                <a className="nav-link" href="#partenariats">Nos partenariats</a>
+                                            </ListItemText>
+                                        </ListItem>
+                                    </List>
+                            )}
+                            <Drawer anchor="right" open={open} onClose={handleToggle} >
+                                <List>
+                                    <ListItem button>
+                                        <ListItemText>
+                                            <a className="nav-link" aria-current="page" href="#contact">Contact <p className='text-smal'>Tel : 00 00 00 00 00 <br /> Gmail : sarloisebtp@gmail.com</p></a>
+                                        </ListItemText>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemText>
+                                            <a className="nav-link" href="#about" >A propos de nous</a>
+                                        </ListItemText>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemText>
+                                            <a  className="nav-link" href="#services">Nos Services</a>
+                                        </ListItemText>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemText>
+                                            <a className="nav-link" href="#partenariats">Nos partenariats</a>
+                                        </ListItemText>
+                                    </ListItem>
+                                </List>
+                            </Drawer>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </>
     )
 }

@@ -3,7 +3,7 @@ import '../styles/partenariats.css'
 
 export default function Partenariats() {
     return (
-        <div className="bg-partenariats">
+        <div className="bg-partenariats" id='partenariats'>
             <div className='container-fluid div-partenariats'>
                 <div className="row">
                     <h1> Nos Partenariats </h1>

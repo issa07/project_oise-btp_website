@@ -48,7 +48,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="sendEmail">
+        <div className="sendEmail" id='contact'>
             <div className="container">
                 <form ref={form} onSubmit={sendEmail} style={{ padding: '50px' }} >
 

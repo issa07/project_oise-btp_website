@@ -5,7 +5,7 @@ import '../styles/sectionBio.css'
 export default function () {
 
     return (
-        <div className='div-global-bio'>
+        <div className='div-global-bio' id='about'>
             <div className="container ">
                 <div className="row " id='rowBio'>
                     <div className="col col-md-4">
