@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.7181a493.css",
-    "main.js": "/static/js/main.6e10c235.js",
-    "index.html": "/index.html",
-    "main.7181a493.css.map": "/static/css/main.7181a493.css.map",
-    "main.6e10c235.js.map": "/static/js/main.6e10c235.js.map"
+    "main.css": "/project_oise-btp_website/static/css/main.7181a493.css",
+    "main.js": "/project_oise-btp_website/static/js/main.efe86f84.js",
+    "index.html": "/project_oise-btp_website/index.html",
+    "main.7181a493.css.map": "/project_oise-btp_website/static/css/main.7181a493.css.map",
+    "main.efe86f84.js.map": "/project_oise-btp_website/static/js/main.efe86f84.js.map"
   },
   "entrypoints": [
     "static/css/main.7181a493.css",
-    "static/js/main.6e10c235.js"
+    "static/js/main.efe86f84.js"
   ]
 }
