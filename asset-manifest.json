@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/project_oise-btp_website/static/css/main.7181a493.css",
-    "main.js": "/project_oise-btp_website/static/js/main.5d7aabed.js",
+    "main.js": "/project_oise-btp_website/static/js/main.f1b8af9b.js",
     "static/js/453.e7c71e3f.chunk.js": "/project_oise-btp_website/static/js/453.e7c71e3f.chunk.js",
     "index.html": "/project_oise-btp_website/index.html",
     "main.7181a493.css.map": "/project_oise-btp_website/static/css/main.7181a493.css.map",
-    "main.5d7aabed.js.map": "/project_oise-btp_website/static/js/main.5d7aabed.js.map",
+    "main.f1b8af9b.js.map": "/project_oise-btp_website/static/js/main.f1b8af9b.js.map",
     "453.e7c71e3f.chunk.js.map": "/project_oise-btp_website/static/js/453.e7c71e3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7181a493.css",
-    "static/js/main.5d7aabed.js"
+    "static/js/main.f1b8af9b.js"
   ]
 }
