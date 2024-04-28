@@ -92,7 +92,7 @@ export default function Footer() {
                 </div>
 
                 <div className="text-center p-3" >
-                    © 2020 Copyright:
+                    © 2024 Copyright
                 </div>
             </div>
         </footer>
